@@ -1,12 +1,12 @@
 /*	
-	Filename:		  reset.css
+	Filename:		reset.css
 	Description:	Resets default HTML styles across browsers
-                Includes HTML5 patches & Print Styles
+					Includes HTML5 patches
 */
 
 
 /* MARGINS, PADDING & FONT SIZE 
-------------------------------------------- */
+-------------------------------------------------- */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,7 +40,7 @@ p {
 
 
 /*  TABLES 
-------------------------------------------- */
+-------------------------------------------------- */
 caption,
 th {
 	font-weight: bold;
@@ -55,7 +55,7 @@ table {
 
 
 /*  FORMS
-------------------------------------------- */
+-------------------------------------------------- */
 fieldset {
 	border: 1px solid black;
 	padding: 1em;
@@ -68,7 +68,7 @@ legend {
 
 
 /* BORDERS 
-------------------------------------------- */
+-------------------------------------------------- */
 img {
 	border:0;
 }
@@ -82,7 +82,7 @@ acronym {
 
 
 /* MISCELLANEOUS 
-------------------------------------------- */
+-------------------------------------------------- */
 
 del {
 	text-decoration: line-through;
@@ -118,37 +118,26 @@ pre {
     word-wrap: break-word;
 }
 
-small {
-	font-size: 80%;
-}
-
-small {
-  font-size: 80%;
-}
-
 sub,
 sup {
-  position: relative;
-  font-size: 75%;
-  line-height: 0;
-  vertical-align: baseline;
-}
-sup {
-  top: -.5em;
-}
-sub {
-  bottom: -.25em;
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
 }
 
-mark {
-  color: #000;
-  background: #ff0;
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
 }
 
 
 /* HTML5 PATCHES
-------------------------------------------- */
-/* Corrects 'block' display not defined in IE 8/9 */
+-------------------------------------------------- */
+/* Corrects `block` display not defined in IE 8/9 */
 article,
 aside,
 details,
@@ -157,21 +146,17 @@ figure,
 footer,
 header,
 hgroup,
-main,
-menu,
 nav,
 section,
 summary {
-  display: block;
+    display: block;
 }
 
 /*Corrects `inline-block` display not defined in IE 8/9 */
 audio,
 canvas,
-progress,
 video {
     display: inline-block;
-    vertical-align: baseline;
 }
 
 /* Prevents modern browsers from displaying `audio` without controls.
@@ -200,86 +185,4 @@ figure {
 
 
 
-/* PRINT STYLES
-------------------------------------------- */
-/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
-
-@media print {
-  *,
-  *:before,
-  *:after {
-    color: #000 !important;
-    text-shadow: none !important;
-    background: transparent !important;
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
-  }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-
-    page-break-inside: avoid;
-  }
-  thead {
-    display: table-header-group;
-  }
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-  img {
-    max-width: 100% !important;
-  }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-  select {
-    background: #fff !important;
-  }
-  .navbar {
-    display: none;
-  }
-  .btn > .caret,
-  .dropup > .btn > .caret {
-    border-top-color: #000 !important;
-  }
-  .label {
-    border: 1px solid #000;
-  }
-  .table {
-    border-collapse: collapse !important;
-  }
-  .table td,
-  .table th {
-    background-color: #fff !important;
-  }
-  .table-bordered th,
-  .table-bordered td {
-    border: 1px solid #ddd !important;
-  }
-}
-
-
-
-/* last updated 4/9/15 */
+/* last updated 1/8/13 */
